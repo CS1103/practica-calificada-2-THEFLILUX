@@ -11,8 +11,8 @@ class ChuckNorris: public Fighter {
 public:
     ChuckNorris() : Fighter(nullptr, nullptr, nullptr, nullptr, nullptr, nullptr) {}
 
-    int attack() override;
-    int defense() override;
+    int attack(Attack*) override;
+    int defense(Defense*) override;
 };
 
 

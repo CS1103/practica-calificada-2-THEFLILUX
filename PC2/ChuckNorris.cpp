@@ -4,10 +4,10 @@
 
 #include "ChuckNorris.h"
 
-int ChuckNorris::attack(Attack attack1) {
-    return Fighter::defense(attack1);
+int ChuckNorris::attack(Attack *) {
+    return attack(attack2);
 }
 
-int ChuckNorris::defense(Attack defense1) {
-    return Fighter::defense(defense1);
+int ChuckNorris::defense(Defense *) {
+    return defense(defense2);
 }

@@ -8,3 +8,7 @@ Fighter::Fighter(Attack *attack1, Attack *attack2, Attack *attack3, Defense *def
                  Defense *defense3)
         : attack1(attack1), attack2(attack2), attack3(attack3), defense1(defense1), defense2(defense2),
           defense3(defense3) {}
+
+int Fighter::attack(Attack *) {
+    return 0;
+}

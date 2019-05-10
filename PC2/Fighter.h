@@ -15,6 +15,7 @@
 #include "Armor.h"
 
 class Fighter {
+protected:
     Attack* attack1 = new Punch(1);
     Attack* attack2 = new Saber(5);
     Attack* attack3 = new Firearm(10);
@@ -26,8 +27,8 @@ public:
     Fighter(Attack *attack1, Attack *attack2, Attack *attack3, Defense *defense1, Defense *defense2,
             Defense *defense3);
 
-    virtual int attack();
-    virtual int defense();
+    virtual int attack(Attack*);
+    virtual int defense(Defense*);
 };
 
 

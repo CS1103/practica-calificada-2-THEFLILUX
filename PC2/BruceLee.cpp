@@ -4,10 +4,10 @@
 
 #include "BruceLee.h"
 
-int BruceLee::defense() {
-    return Fighter::defense();
+int BruceLee::attack(Attack *) {
+    return attack(attack1);
 }
 
-int BruceLee::attack() {
-    return Fighter::attack();
+int BruceLee::defense(Defense *) {
+    return defense(defense1);
 }

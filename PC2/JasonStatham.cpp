@@ -4,10 +4,10 @@
 
 #include "JasonStatham.h"
 
-int JasonStatham::attack(Attack attack1) {
-    return Fighter::attack(attack1);
+int JasonStatham::attack(Attack *) {
+    return attack(attack3);
 }
 
-int JasonStatham::defense(Attack defense1) {
-    return Fighter::defense(defense1);
+int JasonStatham::defense(Defense *) {
+    return defense(defense3);
 }
